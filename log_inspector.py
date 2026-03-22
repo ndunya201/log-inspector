@@ -1,4 +1,4 @@
-from parser import parse_log, filter_errors, filter_by_user
+from log_parser import parse_log, filter_errors, filter_by_user
 from reporter import get_error_summary, get_user_summary, write_csv, write_html
 
 def run_inspector(filepath, mode='summary', username=None, output='print'):

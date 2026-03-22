@@ -1,8 +1,10 @@
 import unittest
 import sys
-sys.path.insert(0, '..')
+import os
 
-from parser import parse_log, filter_errors, filter_by_user
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from log_parser import parse_log, filter_errors, filter_by_user
 from reporter import get_error_summary, get_user_summary
 
 class TestParser(unittest.TestCase):
