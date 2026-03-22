@@ -1,0 +1,9 @@
+# No external dependencies — this project uses Python standard library only
+# Python 3.6+ required
+
+# Standard library modules used:
+# - re
+# - csv
+# - operator
+# - unittest
+# - sys
