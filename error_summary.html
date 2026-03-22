@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        table { border-collapse: collapse; width: 60%; }
+        th { background-color: #4CAF50; color: white; padding: 10px; text-align: left; }
+        td { padding: 8px; border-bottom: 1px solid #ddd; }
+        tr:hover { background-color: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <h2>Log Inspector Report</h2>
+    <table>
+        <tr><th>Error</th><th>Count</th></tr>
+        <tr><td>Tried to add information to closed ticket</td><td>8</td></tr>
+<tr><td>Timeout while retrieving information</td><td>3</td></tr>
+<tr><td>Connection to DB failed</td><td>3</td></tr>
+<tr><td>The ticket was modified while updating</td><td>2</td></tr>
+<tr><td>Permission denied while closing ticket</td><td>2</td></tr>
+<tr><td>Ticket doesn't exist</td><td>2</td></tr>
+
+    </table>
+</body>
+</html>

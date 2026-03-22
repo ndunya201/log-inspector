@@ -57,4 +57,11 @@ def run_inspector(filepath, mode='summary', username=None, output='print'):
 
 
 if __name__ == "__main__":
-    run_inspector('sample_logs/syslog.log', mode='summary', output='print')
+    print("Welcome to Log Inspector!")
+    print("Modes: summary, errors-only, user")
+    mode = input("Select mode: ").strip().lower()
+    output = input("Output format? (print / csv / html): ").strip().lower()
+    username = None
+    if mode == 'user':
+        username = input("Enter username: ").strip().lower()
+    run_inspector('sample_logs/syslog.log', mode=mode, output=output, username=username)
